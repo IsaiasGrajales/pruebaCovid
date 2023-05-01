@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Prueba covid</title>
+</head>
+<body>
+    
+    <section class="prueba-form">
+
+        <form method="post" target="_blank">
+            <p>seleccionar una opcion: </p>
+            <section class="temperatura">
+                <label>¿Temperatura mayor a 38 grados? </label>
+                <input type="radio" id="temperatura" name="temperatura" value="si" checked="checked" required><label for="si">si</label>
+                <input type="radio" id="temperatura" name="temperatura" value="no"><label for="no">no</label>
+            </section>
+            <section class="tos">
+                <label>¿Padeces de tos? </label>
+                <input type="radio" name="tos" value="si" required><label for="si">si</label>
+                <input type="radio" name="tos" value="no"><label for="no">no</label>
+            </section>
+            <section class="dolor-cabeza">
+                <label>¿Dolor de cabeza? </label>
+                <input type="radio" name="dolor-cabeza" value="si" required><label for="si">si</label>
+                <input type="radio" name="dolor-cabeza" value="no"><label for="no">no</label>
+            </section>
+            
+            <button id="enviar" type="button" onclick="temperatura()">Enviar datos</button>
+        </form>
+
+        <h3 class="positivo" id="positivo"></h3>
+        <h4 class="negativo" id="negativo"></h4>
+
+    </section>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
