@@ -15,27 +15,29 @@
             <p>Prueba rapida para detección de Covid-19</p>
             <section class="temperatura">
                 <label>¿Temperatura mayor a 38 grados? </label>
-                <input type="radio" id="si" name="temperatura" value="si" required><label for="si">si</label>
-                <input type="radio" id="no" name="temperatura" value="no"><label for="no">no</label>
+                <input type="radio" id="temperatura" name="temperatura" value="si"><label for="temperatura">si</label>
+                <input type="radio" id="temperatura" name="temperatura" value="no"><label for="temperatura">no</label>
             </section>
             <section class="tos">
                 <label>¿Padeces de tos? </label>
-                <input type="radio" id="si" name="tos" value="si" required><label for="si">si</label>
-                <input type="radio" id="no" name="tos" value="no"><label for="no">no</label>
+                <input type="radio" id="tos" name="tos" value="si"><label for="si">si</label>
+                <input type="radio" id="tos" name="tos" value="no"><label for="no">no</label>
             </section>
             <section class="dolor-cabeza">
                 <label>¿Dolor de cabeza? </label>
-                <input type="radio" name="dolor-cabeza" value="si" required><label for="si">si</label>
-                <input type="radio" name="dolor-cabeza" value="no"><label for="no">no</label>
+                <input type="radio" id="dolor-cabeza" name="dolor-cabeza" value="si"><label for="si">si</label>
+                <input type="radio" id="dolor-cabeza" name="dolor-cabeza" value="no"><label for="no">no</label>
             </section>
             <div class="botones">
-                <button id="enviar" type="button" onclick="">ENVIAR DATOS</button>
-                <button id="resetear" type="button" onclick="">RESET</button>
+                <button id="enviar" type="button" onclick="enviarDatos()">ENVIAR DATOS</button>
+                <button id="resetear" type="button" onclick="reset()">RESET</button>
             </div>
         </form>
 
-        <h3 class="positivo" id="positivo"></h3>
-        <h4 class="negativo" id="negativo"></h4>
+        <div class="resultados">
+            <h3 class="positivo" id="positivo" name="positivo" ></h3>
+            <h4 class="negativo" id="negativo" name="negativo" ></h4>
+        </div>
 
     </section>
 
