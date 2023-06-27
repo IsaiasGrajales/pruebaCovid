@@ -53,8 +53,8 @@ function analizarDatos(valorTemperatura, valorTos, valorDolorCabeza){
 
 function reset(){
 
-    document.getElementById("positivo").style.display = "none";
-    document.getElementById("negativo").style.display = "none";
+    document.getElementById("positivo").className = "ocultar";
+    document.getElementById("negativo").className = "ocultar";
 
     let radioBotonTemp = document.querySelector('input[type=radio][name=temperatura]:checked');
     let radioButtonTos = document.querySelector('input[type=radio][name=tos]:checked');
